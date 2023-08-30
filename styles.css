@@ -1,0 +1,846 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Set your desired background color */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    /* opacity: 0.8; */
+    z-index: 9999;
+}
+
+.menu-btn {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: #333; /* Set your desired text color */
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+/* Slider Styles */
+.slider-container {
+    
+    margin-top: -10vh;
+    /* margin-bottom: -10vh; */
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/a1.jpeg);
+    background-color: #000; /* Set a background color for the slider container */
+}
+
+.slider {
+    
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 15s infinite;
+    
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    resize: vertical;
+    
+    
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 576px (e.g., mobile phones) */
+@media (max-width: 575px) {
+    .navbar {
+        /* Adjust styles for the navigation bar on smaller screens */
+    }
+
+    .menu-btn {
+        /* Adjust styles for the menu button on smaller screens */
+    }
+
+    .menu {
+        /* Adjust styles for the menu on smaller screens */
+    }
+
+    .menu li {
+        /* Adjust styles for menu items on smaller screens */
+    }
+
+    .slider img {
+        /* Adjust styles for the slider images on smaller screens */
+        object-fit: cover; /* Ensure the image scales and retains aspect ratio */
+    }
+}
+
+/* For screens 576px and larger (e.g., tablets) */
+@media (min-width: 576px) {
+    .navbar {
+        /* Adjust styles for the navigation bar on larger screens */
+    }
+
+    .menu-btn {
+        /* Adjust styles for the menu button on larger screens */
+    }
+
+    .menu {
+        /* Adjust styles for the menu on larger screens */
+    }
+
+    .menu li {
+        /* Adjust styles for menu items on larger screens */
+    }
+
+    .slider img {
+        /* Adjust styles for the slider images on larger screens */
+        object-fit: cover; /* Ensure the image scales and retains aspect ratio */
+    }
+}
+
+/* For screens 768px and larger (e.g., small desktops) */
+@media (min-width: 768px) {
+    .navbar {
+        /* Adjust styles for the navigation bar on small desktops */
+    }
+
+    .menu-btn {
+        /* Adjust styles for the menu button on small desktops */
+    }
+
+    .menu {
+        /* Adjust styles for the menu on small desktops */
+    }
+
+    .menu li {
+        /* Adjust styles for menu items on small desktops */
+    }
+
+    .slider img {
+        /* Adjust styles for the slider images on small desktops */
+        object-fit: cover; /* Ensure the image scales and retains aspect ratio */
+    }
+}
+
+/* For screens 992px and larger (e.g., large desktops) */
+@media (min-width: 992px) {
+    .navbar {
+        /* Adjust styles for the navigation bar on large desktops */
+    }
+
+    .menu-btn {
+        /* Adjust styles for the menu button on large desktops */
+    }
+
+    .menu {
+        /* Adjust styles for the menu on large desktops */
+    }
+
+    .menu li {
+        /* Adjust styles for menu items on large desktops */
+    }
+
+    .slider img {
+        /* Adjust styles for the slider images on large desktops */
+        object-fit: cover; /* Ensure the image scales and retains aspect ratio */
+    }
+}
+/* top head  */
+.top {
+    position: fixed;
+    margin-bottom: -40px;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Set your desired background color */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    height: 30px;
+    text-align: center;
+}
+
+/* Base styles for the top bar */
+/* Base styles for the top bar */
+.top {
+    background-color: #FFBF00;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Styles for the contact information and navigation links */
+  .contact_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+  }
+  
+  .contact_nav a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact_nav i {
+    margin-right: 5px;
+  }
+  
+  /* Responsive styles using media queries */
+  @media (max-width: 767px) {
+    /* Small screens, such as mobile phones */
+    .contact_nav {
+      flex-direction: column;
+      font-size: 0; /* Hide the text on small screens */
+    }
+  
+    .contact_nav a {
+      padding: 5px 0; /* Add some spacing between the icons */
+    }
+  
+    .top .contact_nav span {
+      display: none; /* Hide the text on small screens */
+    }
+  }
+  
+  @media (max-width: 479px) {
+    /* Very small screens, such as very small mobile devices */
+    .contact_nav {
+      flex-direction: row;
+      font-size: 12px;
+    }
+  
+    .contact_nav a {
+      padding: 0; /* Reset padding for compact layout */
+    }
+  }
+  
+
+
+
+  /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: #4a5562;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  #footer .footer-top {
+    background: #515d6a;
+    padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+    background: #d9232d;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    color: white;
+  }
+  
+  #footer .footer-top .footer-newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4px;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type=email] {
+    border: 0;
+    padding: 4px;
+    width: calc(100% - 110px);
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type=submit] {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px 2px 20px;
+    background: #d9232d;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  #footer .footer-top .footer-newsletter form input[type=submit]:hover {
+    background: #df3740;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  #footer .credits a {
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s;
+    font-weight: 600;
+  }
+  
+  #footer .credits a:hover {
+    color: white;
+  }
+
+
+  
+
+
+/* photo section  */
+/* Photo section styles */
+.images-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .images-wrapper img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+  }
+  With this updated code, all the images will be displayed in a single row, horizontally. The images will be horizontally scrollable if the container width is not sufficient to show all images at once. You can adjust the max-width of the images to control their size as needed.
+  
+  Remember to replace "path/to/imageX.jpg" with the actual paths to your 8 images.
+  
+  .container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 60px 0;
+  }
+  .slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+  }
+  .card .image-box {
+    height: 300px;
+  }
+  .card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+  }
+  .card .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  .profile-details .name {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .profile-details .job {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+  }
+  
+  .swiper-navBtn {
+    color: #000;
+    height: 50px;
+    width: 50px;
+    transform: translateY(-40%);
+    background: #fff;
+    border-radius: 50%;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 24px;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #333;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .swiper-navBtn {
+      display: none;
+    }
+  }
+  
+  
+  
+  
+
+  /* styles.css */
+
+
+
+.page-breadcrumb {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.htmlpath {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left side */
+  margin-bottom: 10px;
+}
+
+.breadcrumb {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.breadcrumb li:last-child {
+  /* font-weight: bold; */
+}
+
+.description-box {
+  text-align: center;
+  align-items: center;
+}
+
+/* about us our mission and our vision section */
+.col-lg-6 .img-fluid {
+  max-height: 200px; /* Adjust this value to set the desired height */
+}
+
+/* Mobile Version */
+@media (max-width: 767px) {
+  .carousel-mobile {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .carousel-mobile img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-caption-mobile {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #fff;
+  }
+}
+/* Desktop Version */
+@media (min-width: 768px) {
+  .carousel-desktop {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  }
+  .carousel-desktop img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-caption-desktop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+  }
+}
+
+
+/* product section homepage */
+.product-card {
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  color: #333;
+}
+
+.product-description {
+  color: #666;
+}
+
+.btn-more-products {
+  margin-top: -40px;
+  background-color: #FFBF00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-more-products:hover {
+  background-color: #FFBF00;
+}
+
+.product-box {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .product-box {
+    margin-bottom: 15px;
+  }
+}
+
+/* Banner text Aqucan */
+@import url('https://fonts.googleapis.com/css2?family=Glacial+Indifference&display=swap');
+        
+.aquacan-container {
+    background-color: #FFBF00;
+    width: fit-content;
+    padding: 5px;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Glacial Indifference', sans-serif;
+  
+}
+
+.aquacan-text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+}
+
+
+/* Footer  */
+.footer {
+  background-color: #292b2c;
+  padding: 20px 0;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.footer h4 {
+  color: #f0ad4e;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #f0ad4e;
+}
+
+.social-icons-footer a {
+  color: #bbb;
+  margin-right: 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons-footer a:hover {
+  color: #f0ad4e;
+}
+
+.logo-images {
+  text-align: right;
+  margin-top: -10px;
+
+}
+
+.logo-images img {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.top-right {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .footer ul {
+    column-count: 2;
+  }
+  
+  .logo-images {
+    text-align: center;
+    /* margin-top: 20px; */
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-images {
+    text-align: center; /* Center align in desktop */
+    /* margin-top: 20px;  */
+    column-count: 1; /* Display logos vertically */
+  }
+}
+
+
+
+
+
+
+
+/* carousel caption text */
+
+
+
+  
+
+
+.glacial-bold {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: bold;
+  font-size:50px ;
+  color: #000;
+  font-weight: 900;
+
+
+}
+
+.glacial-regular {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: normal;
+  font-size: 50PX;
+  color: #000;
+  
+  font-weight: 530;
+}
+
+/* mobile image crousel caption */
+.carousel-text {
+  position: absolute;
+  right: 5%;
+  bottom: 20px;
+  left: 5%;
+  z-index: 10;
+  /* padding-top: 20px; */
+  padding-bottom: 300px;
+  color: #fff;
+  /* text-align: center; */
+  line-height: 1.4;
+}
+.glacial-boldm {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: bold;
+  font-size:45px ;
+  color: #000;
+  font-weight: 800;
+
+
+}
+
+.glacial-regularm {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: normal;
+  font-size: 40PX;
+  color: #000;
+  
+  font-weight: 500;
+}
+
+/* each page banner text */
+.pagetext {
+  position: relative;
+  right: 5%;
+  bottom: 20px;
+  left: 5%;
+  z-index: 10;
+  /* padding-top: 20px; */
+  /* padding-bottom: 300px; */
+  color: #fff;
+  /* text-align: center; */
+  line-height: 1.4;
+}
+
+.textfont {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: bold;
+  font-size:45px ;
+  color: #000;
+  font-weight: 800;
+  position: relative;
+  right: 5%;
+  bottom: -31px;
+  left: 5%;
+  z-index: 10;
+  /* padding-top: 20px; */
+  /* padding-bottom: 300px; */
+  /* color: #fff; */
+  /* text-align: center; */
+  line-height: 1.5;
+}
